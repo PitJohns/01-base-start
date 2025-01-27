@@ -93,21 +93,21 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol) {
     const num2 = Number(inp2.value);
     if (actionSymbol == '+') {
       return num1 + num2; 
-    }; 
-
+    } 
     if (actionSymbol == '-') {
        return  num1 - num2; 
-    } ;
-
-
+    }  
 };
 
 submitBtn.onclick = function () {
-    if (operator == 1) {
+  const result = computeNumbersWithAction(input1, input2, action) {
+  printResult(result);
+  }; 
+   /* if (operator == 1) {
         const sum = Number(input1.value) + Number(input2.value);
         printResult(sum);
     } else {
         const sum = Number(input1.value) - Number(input2.value);
         printResult(sum);
-    };
+    };*/
 };    

@@ -88,8 +88,9 @@ function printResult(result) {
     resultElement.textContent = result;
 }; 
 
-function computeNumbersWithAction(val1, val2, actionSymbol) {
-
+function computeNumbersWithAction(inp1, inp2, actionSymbol) {
+    const num1 = Number(inp1.value);
+    const num2 = Number(inp2.value);
 };
 
 submitBtn.onclick = function () {

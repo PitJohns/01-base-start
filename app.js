@@ -56,7 +56,7 @@ const input2 = document.getElementById('input2');
 const submitBtn = document.getElementById('submit');
 const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
-let action = 1;
+let action = '+';
 
 
 
@@ -88,13 +88,13 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol) {
       return num1 + num2; 
     } else if (actionSymbol == '-') {
        return  num1 - num2; 
-    } ; 
+    }; 
 };
 
 submitBtn.onclick = function () {
-  const result = computeNumbersWithAction(input1, input2, action) {
+  const result = computeNumbersWithAction(input1, input2, action) 
   printResult(result);
-  }; 
+  
    /* if (operator == 1) {
         const sum = Number(input1.value) + Number(input2.value);
         printResult(sum);

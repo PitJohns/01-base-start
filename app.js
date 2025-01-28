@@ -73,6 +73,13 @@ let action = '+';
     resultElement.textContent = sum;
 };*/
 
+plusBtn.onclick = function () {
+    action = '+';
+};
+
+minusBtn.onclick = function () {
+    action = '-';
+};
 
 function printResult(result) {
     if (result < 0) {

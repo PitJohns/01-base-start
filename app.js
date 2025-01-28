@@ -56,6 +56,8 @@ const input2 = document.getElementById('input2');
 const submitBtn = document.getElementById('submit');
 const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
+const multBtn = document.getElementById('mult');
+const disBtn = document.getElementById('dis');
 let action = '+';
 
 
@@ -81,6 +83,13 @@ minusBtn.onclick = function () {
     action = '-';
 };
 
+multBtn.onclick = function () {
+    action = '*';
+};
+disBtn.onclick = function () {
+    action = '/';
+};
+
 function printResult(result) {
     if (result < 0) {
         resultElement.style.color = 'red'
@@ -95,7 +104,11 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol) {
       return num1 + num2; 
     } else if (actionSymbol == '-') {
        return  num1 - num2; 
-    }; 
+    } else if (actionSymbol == '*') {
+        return  num1 * num2; 
+    } else if (actionSymbol == '/') {
+        return  num1 / num2; 
+    };     
 };
 
 submitBtn.onclick = function () {

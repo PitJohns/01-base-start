@@ -107,7 +107,7 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol) {
     } else if (actionSymbol == '*') {
         return  num1 * num2; 
     } else if (actionSymbol == '/') {
-        return  num1 / num2; 
+        return  num1 /  num2; 
     };     
 };
 

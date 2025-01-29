@@ -1,6 +1,6 @@
 let num  = 42; // number
 let firstName = 'Vladilen'; //string
-const isProgrammer = true; //boolean
+//const isProgrammer = true; //boolean
 
 firstName = 'Max';
 //isProgrammer = false; // error комментарий

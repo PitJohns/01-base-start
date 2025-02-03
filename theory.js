@@ -24,7 +24,17 @@ c /= a;*/
 const age = 29; // number
 const name = 'Vladilen'; // string
 const isProgrammer = true; //boolean
+let x // undefined
+null
 
-console.log(typeof age);
-console.log(typeof name);
-console.log(typeof isProgrammer);
+//console.log(typeof age);
+//console.log(typeof name);
+//console.log(typeof isProgrammer);
+//console.log(typeof (1/x));
+//console.log(typeof NaN);
+
+// =========== Priority 
+const = fullAge = 29;
+const = birthYear = 1993;
+const = currentYear = 2023; 
+// > < >= 

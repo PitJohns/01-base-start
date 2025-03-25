@@ -91,6 +91,7 @@ disBtn.onclick = function () {
 };
 
 function printResult(result) {
+    console.log('Result to print', result )
     if (result < 0) {
         resultElement.style.color = 'red'
     } else resultElement.style.color = 'green';
@@ -98,8 +99,11 @@ function printResult(result) {
 }; 
 
 function computeNumbersWithAction(inp1, inp2, actionSymbol) {
-    const num1 = Number(inp1.value);
-    const num2 = Number(inp2.value);
+    const num1 = inp1.value;
+    const num2 = inp2.value;
+
+    debugger
+    
     if (actionSymbol == '+') {
       return num1 + num2; 
     } else if (actionSymbol == '-') {
@@ -109,6 +113,7 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol) {
     } else if (actionSymbol == '/') {
         return  num1 /  num2; 
     };     
+    
 };
 
 submitBtn.onclick = function () {
